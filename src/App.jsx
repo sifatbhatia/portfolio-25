@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import { AnimatePresence } from "framer-motion";
 import React from "react";
 import {
@@ -11,11 +12,13 @@ import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import ProjectDetails from "./components/ProjectDetails";
 import Projects from "./components/Projects";
-
 function App() {
 
   return (
-    <HeroSection />
+    <>
+      <HeroSection />
+      <Analytics />
+    </>
 
   );
 }
