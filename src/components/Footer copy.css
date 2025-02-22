@@ -1,0 +1,118 @@
+.footer {
+   background-color: #000;
+   color: #fff;
+   padding: 3rem 1.5rem;
+}
+
+.footer-container {
+   max-width: 1200px;
+   margin: 0 auto;
+   text-align: center;
+}
+
+/* Logo Section */
+.footer-logo h1 {
+   font-size: 4rem;
+   font-weight: bold;
+   letter-spacing: 0.1em;
+   color: #fff;
+   text-stroke: 2px #fff;
+   text-transform: uppercase;
+}
+
+/* Divider */
+.footer-divider {
+   border-top: 1px solid #555;
+   margin: 2rem 0;
+}
+
+/* Subscription Section */
+.footer-subscription {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 1.5rem;
+}
+
+.footer-title {
+   font-size: 1.2rem;
+   font-weight: 600;
+   text-transform: uppercase;
+}
+
+.subscription-form {
+   display: flex;
+   border: 2px solid #fff;
+   border-radius: 30px;
+   padding: 0.5rem 1rem;
+   width: 100%;
+   max-width: 400px;
+}
+
+.subscription-input {
+   flex-grow: 1;
+   background: none;
+   color: #fff;
+   border: none;
+   outline: none;
+   font-size: 1rem;
+   padding: 0.5rem;
+}
+
+.subscription-input::placeholder {
+   color: #ccc;
+}
+
+.subscription-button {
+   background: none;
+   border: none;
+   cursor: pointer;
+}
+
+.subscription-icon {
+   width: 24px;
+   height: 24px;
+   color: #fff;
+}
+
+/* Links and Icon Section */
+.footer-links {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 2rem;
+   flex-wrap: wrap;
+   margin-top: 2rem;
+}
+
+.footer-links ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+.footer-links ul li {
+   margin: 0.5rem 0;
+   font-size: 1rem;
+   font-weight: 500;
+}
+
+.footer-logo-icon {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.footer-logo-icon .icon {
+   width: 60px;
+   height: 60px;
+   color: #fff;
+}
+
+/* Copyright Section */
+.footer-copyright {
+   margin-top: 2rem;
+   font-size: 0.85rem;
+   font-weight: 300;
+   color: #aaa;
+}
