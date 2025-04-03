@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://siftion.com/sitemap.xml 
