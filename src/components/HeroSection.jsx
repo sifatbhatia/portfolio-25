@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import Logo from "../assets/logo.svg?react";
 
 const HeroSection = () => {
    const logoRef = useRef(null);
@@ -35,9 +36,7 @@ const HeroSection = () => {
       <section id="home" className="bg-[#030a1f] text-white min-h-[calc(100vh-80px)] flex flex-col justify-end relative">
          <div className="w-full px-4 md:px-8 lg:px-16 mb-8">
             <div ref={logoRef}>
-               <img
-                  src="/logo.svg"
-                  alt="Logo"
+               <Logo
                   className="w-full h-auto"
                   style={{ strokeWidth: "1.5" }}
                />
