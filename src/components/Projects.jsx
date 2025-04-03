@@ -12,7 +12,7 @@ const Projects = () => {
       title: "JWorra",
       description: "Professional website for DJ and producer J. Worra featuring music, tour dates, and latest updates",
       detailedDescription: "J. Worra is the professional alias of Jamie Sitter, a DJ and producer originally from Chicago, now based in Los Angeles. She has carved a niche in the dance music scene by blending classic house rhythms with contemporary tech elements, resulting in a distinctive and captivating sound. Her official website, jworra.com, serves as a central hub for her music releases, tour dates, and latest updates.",
-      image: "src/assets/jworra.png",
+      image: "/jworra.png",
       technologies: ["PHP", "JavaScript", "FontAwesome", "CSS", "HTML"],
       link: "https://www.jworra.com/",
       features: [
@@ -37,7 +37,7 @@ const Projects = () => {
       title: "L'Affaire Musicale",
       description: "Artist management firm with 20+ years of industry experience",
       detailedDescription: "L'Affaire Musicale is a distinguished artist management firm with over two decades of experience in the music industry. Specializing in artist development and career management, the firm has built a reputation for nurturing talent and creating successful careers through strategic partnerships, thoughtful mentorship, and customized content strategies. Their clients have achieved significant milestones including releases on major labels, features in top publications, and performances at major festivals worldwide.",
-      image: "src/assets/laffaire.png",
+      image: "/laffaire.png",
       technologies: ["Squarespace", "Custom CSS", "JavaScript", "HTML", "Responsive Design"],
       link: "#",
       features: [
@@ -62,7 +62,7 @@ const Projects = () => {
       title: "StarConsciousness",
       description: "Transformative platform for spiritual awakening and consciousness development",
       detailedDescription: "StarConsciousness.com is a comprehensive platform dedicated to spiritual awakening and consciousness development. The site features a unique blend of content including the Lighttoformiam Mindset, Cosmic Crest, and the New R.A.C.E. Paradigm (Respect, Appreciation, Compassionate, Empowerment). It serves as a hub for spiritual education, offering resources like eBooks, videos, and interactive content to help users unlock their STARPower and achieve self-mastery.",
-      image: "src/assets/star-con.jpeg",
+      image: "/star-con.jpeg",
       technologies: ["WordPress", "Custom Theme", "PHP", "JavaScript", "CSS", "HTML"],
       link: "http://starconsciousness.com/",
       features: [
@@ -100,7 +100,7 @@ const Projects = () => {
           id: 1,
           title: "Random Cat GIF Generator",
           description: "A fun web app that generates random cat GIFs using the Cat API",
-          image: "src/assets/cat-gen.png",
+          image: "/cat-gen.png",
           technologies: ["React", "API Integration", "CSS", "HTML"],
           link: "https://cat-gen.onrender.com/",
           features: [
@@ -115,7 +115,7 @@ const Projects = () => {
           id: 2,
           title: "Random Dog GIF Generator",
           description: "Interactive web application that fetches random dog GIFs",
-          image: "src/assets/dog-gen.png",
+          image: "/dog-gen.png",
           technologies: ["React", "API Integration", "CSS", "HTML"],
           link: "https://dog-gen.onrender.com/",
           features: [
