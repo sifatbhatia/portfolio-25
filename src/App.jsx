@@ -1,28 +1,20 @@
 import { Analytics } from '@vercel/analytics/react';
-import { AnimatePresence } from "framer-motion";
 import React from "react";
-import {
-  Route,
-  BrowserRouter as Router,
-  Routes,
-  useLocation,
-} from "react-router-dom";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
-import ProjectDetails from "./components/ProjectDetails";
+import About from "./components/About";
 import Projects from "./components/Projects";
+import Footer from './components/Footer';
+
 function App() {
-
   return (
-    <>
+    <div className="min-h-screen bg-[#030a1f]">
       <HeroSection />
+      <About />
+      <Projects />
+      <Footer />
       <Analytics />
-    </>
-
+    </div>
   );
 }
-
-
 
 export default App;
