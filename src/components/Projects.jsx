@@ -39,7 +39,7 @@ const Projects = () => {
       detailedDescription: "L'Affaire Musicale is a distinguished artist management firm with over two decades of experience in the music industry. Specializing in artist development and career management, the firm has built a reputation for nurturing talent and creating successful careers through strategic partnerships, thoughtful mentorship, and customized content strategies. Their clients have achieved significant milestones including releases on major labels, features in top publications, and performances at major festivals worldwide.",
       image: "/laffaire.png",
       technologies: ["Squarespace", "Custom CSS", "JavaScript", "HTML", "Responsive Design"],
-      link: "#",
+      link: "https://www.laffairemusicale.com/",
       features: [
         "Artist management and career development",
         "Strategic music promotion and marketing",
@@ -62,7 +62,7 @@ const Projects = () => {
       title: "StarConsciousness",
       description: "Transformative platform for spiritual awakening and consciousness development",
       detailedDescription: "StarConsciousness.com is a comprehensive platform dedicated to spiritual awakening and consciousness development. The site features a unique blend of content including the Lighttoformiam Mindset, Cosmic Crest, and the New R.A.C.E. Paradigm (Respect, Appreciation, Compassionate, Empowerment). It serves as a hub for spiritual education, offering resources like eBooks, videos, and interactive content to help users unlock their STARPower and achieve self-mastery.",
-      image: "/star-con.jpeg",
+      image: "/star-con.png",
       technologies: ["WordPress", "Custom Theme", "PHP", "JavaScript", "CSS", "HTML"],
       link: "http://starconsciousness.com/",
       features: [
@@ -81,6 +81,32 @@ const Projects = () => {
         "Optimizing performance for media-rich content",
         "Ensuring accessibility across different devices and browsers"
       ]
+    },
+    {
+      id: 4,
+      title: "Wicked Paradise",
+      description: "A premier day club and intimate boat party series website",
+      detailedDescription: "Wicked Paradise is a premier day club and intimate boat party series that has become beloved by crowds in LA, Miami, New York, and Chicago. The website showcases their exclusive events including Cafe Mambo residencies, Wicked Delight parties, Dreamboat experiences, and special artist series featuring top DJs like Justin Jay, Will Clarke, Moon Boots, and more. The platform serves as a hub for event information, ticket sales, and maintaining the brand's exclusive, high-energy atmosphere.",
+      image: "/wickedparadise.png",
+      technologies: ["React", "JavaScript", "CSS", "HTML", "Responsive Design", "Animation"],
+      link: "https://www.wckdparadise.com/",
+      features: [
+        "Event showcase and ticket sales",
+        "Artist series and lineup display",
+        "Partnership and marketing inquiries",
+        "Newsletter subscription system",
+        "Responsive design for all devices",
+        "Gallery of past events",
+        "Contact form integration",
+        "Social media integration"
+      ],
+      challenges: [
+        "Creating an exclusive, high-end user experience",
+        "Managing multiple event types and locations",
+        "Handling high traffic during ticket releases",
+        "Maintaining brand consistency across different event types",
+        "Integrating various event platforms and ticketing systems"
+      ]
     }
   ];
 
@@ -98,11 +124,11 @@ const Projects = () => {
       projects: [
         {
           id: 1,
-          title: "Random Cat GIF Generator",
+          title: "Meow Gen",
           description: "A fun web app that generates random cat GIFs using the Cat API",
-          image: "/cat-gen.png",
+          image: "/meow-gen.png",
           technologies: ["React", "API Integration", "CSS", "HTML"],
-          link: "https://cat-gen.onrender.com/",
+          link: "https://meowgen.siftion.com/",
           features: [
             "Real-time random cat GIF generation",
             "Clean and intuitive user interface",
@@ -113,17 +139,40 @@ const Projects = () => {
         },
         {
           id: 2,
-          title: "Random Dog GIF Generator",
+          title: "Pup Gen",
           description: "Interactive web application that fetches random dog GIFs",
-          image: "/dog-gen.png",
+          image: "/pup-gen.png",
           technologies: ["React", "API Integration", "CSS", "HTML"],
-          link: "https://dog-gen.onrender.com/",
+          link: "https://pupgen.siftion.com/",
           features: [
             "Random dog GIF generation",
             "User-friendly interface",
             "Mobile-responsive design",
             "Efficient API handling",
             "Quick GIF loading"
+          ]
+        }
+      ]
+    },
+    {
+      folderName: "Web Tools",
+      icon: "🛠️",
+      projects: [
+        {
+          id: 1,
+          title: "PixSqueeze",
+          description: "Image compression tool that makes your images lighter while maintaining quality",
+          image: "/pixsqueeze.png",
+          technologies: ["React", "JavaScript", "CSS", "HTML", "Image Processing"],
+          link: "https://pixsqueeze.siftion.com/",
+          features: [
+            "Drag-and-drop interface for easy image upload",
+            "Supports images up to 500MB",
+            "Efficient image compression algorithms",
+            "Maintains image quality while reducing size",
+            "Simple and intuitive user interface",
+            "Fast processing times",
+            "No registration required"
           ]
         }
       ]
@@ -227,7 +276,7 @@ const Projects = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="relative overflow-hidden rounded-xl shadow-lg bg-[#030a1f] h-full">
+            <div className="relative overflow-hidden rounded-xl shadow-lg bg-[#030a1f]">
               <div className="aspect-w-16 aspect-h-9">
                 <img
                   src={featuredProject.image}
@@ -262,7 +311,7 @@ const Projects = () => {
 
           {/* Other Projects */}
           <div className="grid grid-cols-1 gap-8">
-            {otherProjects.map((project) => (
+            {otherProjects.slice(0, 2).map((project) => (
               <motion.div
                 key={project.id}
                 className="relative group cursor-pointer"
@@ -304,6 +353,109 @@ const Projects = () => {
               </motion.div>
             ))}
           </div>
+        </div>
+
+        {/* Wicked Paradise Project */}
+        <div className="mt-12 flex justify-center gap-8">
+          <motion.div
+            className="relative group cursor-pointer w-1/2"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            onClick={() => setSelectedProject(projects[3])}
+          >
+            <div className="relative overflow-hidden rounded-xl shadow-lg bg-[#030a1f]">
+              <div className="aspect-w-16 aspect-h-9">
+                <img
+                  src={projects[3].image}
+                  alt={projects[3].title}
+                  className="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-[#030a1f]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-0 p-6 text-[#d1cdc2]">
+                  <h3 className="text-2xl font-bold mb-2">{projects[3].title}</h3>
+                  <p className="text-sm mb-4">{projects[3].description}</p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {projects[3].technologies.map((tech, index) => (
+                      <span
+                        key={index}
+                        className="px-3 py-1 bg-[#d1cdc2]/20 rounded-full text-xs"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                  <button className="inline-block px-6 py-2 bg-[#d1cdc2] text-[#030a1f] rounded-full font-medium hover:bg-[#d1cdc2]/90 transition-colors">
+                    Learn More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* CineSky Project */}
+          <motion.div
+            className="relative group cursor-pointer w-1/2"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            onClick={() => setSelectedProject({
+              id: 5,
+              title: "CineSky",
+              description: "Modern weather application with real-time forecasts",
+              detailedDescription: "CineSky is a modern weather application built with Next.js that provides real-time weather information and forecasts. The app features a clean, responsive UI and integrates with OpenWeatherMap API for accurate weather data. Users can search for weather in any city worldwide, save favorite locations, and view their current location on a map.",
+              image: "/cine-sky.png",
+              technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Firebase", "OpenWeatherMap API", "React Icons"],
+              link: "https://cinesky.siftion.com",
+              features: [
+                "Real-time weather information",
+                "Weather search for any city",
+                "Location management",
+                "Interactive map view",
+                "User authentication",
+                "Responsive design",
+                "Weather animations",
+                "Live clock integration"
+              ],
+              challenges: [
+                "Integrating multiple APIs seamlessly",
+                "Implementing real-time weather updates",
+                "Managing user location data securely",
+                "Creating smooth weather animations",
+                "Optimizing performance for mobile devices"
+              ]
+            })}
+          >
+            <div className="relative overflow-hidden rounded-xl shadow-lg bg-[#030a1f]">
+              <div className="aspect-w-16 aspect-h-9">
+                <img
+                  src="/cine-sky.png"
+                  alt="CineSky"
+                  className="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-[#030a1f]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-0 p-6 text-[#d1cdc2]">
+                  <h3 className="text-2xl font-bold mb-2">CineSky</h3>
+                  <p className="text-sm mb-4">Modern weather application with real-time forecasts</p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {["Next.js", "TypeScript", "Tailwind CSS", "Firebase"].map((tech, index) => (
+                      <span
+                        key={index}
+                        className="px-3 py-1 bg-[#d1cdc2]/20 rounded-full text-xs"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                  <button className="inline-block px-6 py-2 bg-[#d1cdc2] text-[#030a1f] rounded-full font-medium hover:bg-[#d1cdc2]/90 transition-colors">
+                    Learn More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </motion.div>
         </div>
 
         {/* Misc Projects Section */}
