@@ -176,7 +176,7 @@ const Footer = () => {
 
         {/* Bottom section with logo */}
         <div className="mt-40 flex flex-col md:flex-row justify-between items-center">
-          <img src="/logo.svg" alt="Emotion Logo" className="h-24 w-auto mb-8 md:mb-0" />
+          <img src="/logo.svg" alt="Emotion Logo" className="footer-logo h-24 w-auto mb-8 md:mb-0" />
           <div className="flex flex-wrap gap-4 items-center text-sm text-[#d1cdc2]/70">
             <span>©2025. All rights reserved</span>
             {/* <a href="#" className="hover:text-[#d1cdc2] transition-colors">Terms of Service</a>

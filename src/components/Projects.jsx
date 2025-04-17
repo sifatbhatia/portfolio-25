@@ -151,6 +151,28 @@ const Projects = () => {
             "Efficient API handling",
             "Quick GIF loading"
           ]
+        },
+        {
+          id: 3,
+          title: "FilmFlow",
+          description: "Streamlined Movie Discovery web app for exploring and tracking films.",
+          image: "/filmflow.png",
+          technologies: ["React", "Redux", "Node.js", "Express", "Sequelize", "Bcrypt", "API Integration", "CSS", "HTML"],
+          link: "https://fimther-arqn.vercel.app/",
+          features: [
+            "Modern UI for movie exploration and discovery",
+            "User authentication with Bcrypt",
+            "API server, database, and custom routes",
+            "Weekly stand-up progress tracking",
+            "Deployment to Vercel",
+            "Redux for state management"
+          ],
+          progress: [
+            "Week 1: Improved React knowledge, created layouts for API server, database, server, and routes.",
+            "Week 2: Learned Bcrypt and worked on user authentication, fixing API routes.",
+            "Week 3: Added Bcrypt, controllers, Redux; researched Sequelize relationships.",
+            "Week 4: Explored deployment options, cleaned up GitHub repo."
+          ]
         }
       ]
     },
@@ -284,8 +306,8 @@ const Projects = () => {
                   className="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-[#030a1f]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-0 p-8 text-[#d1cdc2]">
+              <div className="absolute inset-0 bg-[#18181b]/95 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                <div className="w-full p-8 bg-[#18181b]/90 rounded-b-xl text-white">
                   <h3 className="text-3xl font-bold mb-3">{featuredProject.title}</h3>
                   <p className="text-lg mb-6">{featuredProject.description}</p>
                   <div className="flex flex-wrap gap-2 mb-6">
@@ -330,8 +352,8 @@ const Projects = () => {
                       className="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-500"
                     />
                   </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#030a1f]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="absolute bottom-0 p-6 text-[#d1cdc2]">
+                  <div className="absolute inset-0 bg-[#18181b]/95 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                    <div className="w-full p-6 text-white">
                       <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
                       <p className="text-sm mb-4">{project.description}</p>
                       <div className="flex flex-wrap gap-2 mb-4">
@@ -372,8 +394,8 @@ const Projects = () => {
                   className="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-[#030a1f]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-0 p-6 text-[#d1cdc2]">
+              <div className="absolute inset-0 bg-[#18181b]/95 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                <div className="w-full p-6 text-white">
                   <h3 className="text-2xl font-bold mb-2">{projects[3].title}</h3>
                   <p className="text-sm mb-4">{projects[3].description}</p>
                   <div className="flex flex-wrap gap-2 mb-4">
@@ -435,8 +457,8 @@ const Projects = () => {
                   className="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-[#030a1f]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-0 p-6 text-[#d1cdc2]">
+              <div className="absolute inset-0 bg-[#18181b]/95 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                <div className="w-full p-6 text-white">
                   <h3 className="text-2xl font-bold mb-2">CineSky</h3>
                   <p className="text-sm mb-4">Modern weather application with real-time forecasts</p>
                   <div className="flex flex-wrap gap-2 mb-4">
@@ -468,7 +490,7 @@ const Projects = () => {
               <div key={folder.folderName} className="mb-8">
                 <button
                   onClick={() => toggleFolder(folder.folderName)}
-                  className="w-full flex items-center justify-between p-4 bg-[#030a1f] rounded-lg shadow-md hover:bg-[#030a1f]/90 transition-colors text-[#d1cdc2]"
+                  className="w-full flex items-center justify-between p-8 bg-[#030a1f] rounded-lg shadow-md hover:bg-[#030a1f]/90 transition-colors text-[#d1cdc2]"
                 >
                   <div className="flex items-center space-x-3">
                     <span className="text-2xl">{folder.icon}</span>
@@ -507,8 +529,8 @@ const Projects = () => {
                               className="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-500"
                             />
                           </div>
-                          <div className="absolute inset-0 bg-gradient-to-t from-[#030a1f]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <div className="absolute bottom-0 p-6 text-[#d1cdc2]">
+                          <div className="absolute inset-0 bg-[#18181b]/95 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                            <div className="w-full p-6 text-white">
                               <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
                               <p className="text-sm mb-4">{project.description}</p>
                               <div className="flex flex-wrap gap-2 mb-4">
