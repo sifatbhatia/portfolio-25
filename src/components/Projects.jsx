@@ -158,7 +158,7 @@ const Projects = () => {
           description: "Streamlined Movie Discovery web app for exploring and tracking films.",
           image: "/filmflow.png",
           technologies: ["React", "Redux", "Node.js", "Express", "Sequelize", "Bcrypt", "API Integration", "CSS", "HTML"],
-          link: "https://fimther-arqn.vercel.app/",
+          link: "https://filmflow.siftion.com/",
           features: [
             "Modern UI for movie exploration and discovery",
             "User authentication with Bcrypt",
