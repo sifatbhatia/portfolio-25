@@ -4,7 +4,7 @@ const HamburgerMenu = ({ menuItems = [] }) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="fixed top-6 left-6 z-50">
+    <div className="relative z-50">
       {/* Hamburger Button */}
       <button
         className="flex items-center justify-center w-14 h-14 rounded-full border-2 border-[#d1cdc2] bg-black/20 backdrop-blur-lg hover:bg-white/20 transition-all focus:outline-none group shadow-lg"

@@ -8,6 +8,31 @@ const Projects = () => {
 
   const projects = [
     {
+      id: 0,
+      title: "Food Calorie Counter",
+      description: "A modern, responsive PWA for tracking daily food intake, calories, and macros. Built with Next.js, React, and USDA FoodData Central API.",
+      detailedDescription: `A modern, responsive Progressive Web App (PWA) for tracking daily food intake, calories, and macronutrients. Features food search (USDA API), barcode entry, nutrition charts, diary/history, dark mode, PWA install, and offline fallback. All data is stored locally for privacy.`,
+      image: "/food-calorie-counter.png",
+      technologies: ["Next.js", "React", "USDA FoodData Central API", "Open Food Facts", "Recharts", "Lucide Icons", "Radix UI", "PWA"],
+      link: "https://calorie-tracker.siftion.com",
+      features: [
+        "Add foods by search (USDA) or barcode (Open Food Facts fallback)",
+        "Daily diary & history with edit/delete/re-add",
+        "Nutrition charts for calories and macronutrients",
+        "Set daily calorie goal and toggle dark mode",
+        "PWA: install on phone or desktop, works offline",
+        "All data stored in browser (no account needed)",
+        "Customizable mock foods and theming"
+      ],
+      challenges: [
+        "Integrating multiple APIs (USDA, Open Food Facts)",
+        "Ensuring reliable offline support with mock data",
+        "Balancing privacy (local storage) with usability",
+        "Building a seamless, mobile-friendly PWA experience",
+        "Visualizing nutrition data in an accessible way"
+      ]
+    },
+    {
       id: 1,
       title: "JWorra",
       description: "Professional website for DJ and producer J. Worra featuring music, tour dates, and latest updates",

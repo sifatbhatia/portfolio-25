@@ -25,7 +25,7 @@ function App() {
 
   return (
     <>
-      <div className="fixed top-6 left-0 w-full flex items-center justify-between px-6 z-50 pointer-events-none">
+      <div className="fixed top-6 left-0 w-full flex items-center justify-between px-10 z-50 pointer-events-none">
         <div className="pointer-events-auto">
           <HamburgerMenu menuItems={[
             { label: 'Home', href: '#home' },
