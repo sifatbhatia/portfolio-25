@@ -587,3 +587,7 @@ body.pixy-mode::-webkit-scrollbar-thumb {
   background: #111;
   border: 2px solid #fff;
 }
+
+#root > div.fixed.top-6.left-0.w-full.flex.items-center.justify-between.px-10.z-50.pointer-events-none > div:nth-child(2) > button {
+  font-size: 0.55em !important;
+}
