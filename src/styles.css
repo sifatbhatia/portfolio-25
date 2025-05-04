@@ -589,5 +589,5 @@ body.pixy-mode::-webkit-scrollbar-thumb {
 }
 
 #root > div.fixed.top-6.left-0.w-full.flex.items-center.justify-between.px-10.z-50.pointer-events-none > div:nth-child(2) > button {
-  font-size: 0.55em !important;
+  font-size: 0.75em !important;
 }
