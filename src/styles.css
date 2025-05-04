@@ -240,6 +240,15 @@ body.pixy-mode::-webkit-scrollbar-thumb {
   background: #111;
 }
 
+/* Logo animation styles */
+.transition-opacity {
+  transition-property: opacity;
+}
+
+.duration-800 {
+  transition-duration: 800ms;
+}
+
 /* Override Tailwind utility classes in Pixy Mode */
 body.pixy-mode [class*="bg-"] {
   background-color: #fff !important;

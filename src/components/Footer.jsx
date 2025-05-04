@@ -1,7 +1,21 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { motion, useInView } from 'framer-motion';
 
 const Footer = () => {
+  const [isInView, setIsInView] = useState(false);
+  const footerRef = useRef(null);
+  
+  // Check if footer is in view
+  const inView = useInView(footerRef, { once: false, amount: 0.2 });
+  
+  useEffect(() => {
+    if (inView) {
+      setIsInView(true);
+    } else {
+      setIsInView(false);
+    }
+  }, [inView]);
   const [formData, setFormData] = useState({
     email: '',
     name: '',
@@ -51,7 +65,15 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#030a1f] text-[#d1cdc2] py-20 px-4 md:px-8">
+    <motion.footer 
+      ref={footerRef}
+      initial={{ backgroundColor: '#030a1f' }}
+      animate={{ 
+        backgroundColor: isInView ? '#0c1a3d' : '#030a1f',
+        transition: { duration: 0.8, ease: 'easeInOut' }
+      }}
+      className="text-[#d1cdc2] py-20 px-4 md:px-8"
+    >
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           {/* Left side */}
@@ -63,10 +85,12 @@ const Footer = () => {
                   <input
                     type="text"
                     name="name"
+                    placeholder="Your name"
                     value={formData.name}
                     onChange={handleChange}
-                    placeholder="Your name"
                     className="w-full px-6 py-4 rounded-full bg-[#d1cdc2]/10 text-[#d1cdc2] placeholder-[#d1cdc2]/50 focus:outline-none focus:ring-2 focus:ring-[#d1cdc2]/20 transition-all invalid:ring-2 invalid:ring-[#d1cdc2]/30"
+                    aria-label="Your name"
+                    aria-required="true"
                     required
                     onInvalid={(e) => {
                       e.target.setCustomValidity('');
@@ -82,10 +106,12 @@ const Footer = () => {
                   <input
                     type="email"
                     name="email"
+                    placeholder="Your email"
                     value={formData.email}
                     onChange={handleChange}
-                    placeholder="Your email"
                     className="w-full px-6 py-4 rounded-full bg-[#d1cdc2]/10 text-[#d1cdc2] placeholder-[#d1cdc2]/50 focus:outline-none focus:ring-2 focus:ring-[#d1cdc2]/20 transition-all invalid:ring-2 invalid:ring-[#d1cdc2]/30"
+                    aria-label="Your email address"
+                    aria-required="true"
                     required
                     onInvalid={(e) => {
                       e.target.setCustomValidity('');
@@ -102,11 +128,12 @@ const Footer = () => {
                 <div className="space-y-2 relative">
                   <textarea
                     name="message"
+                    placeholder="Your message"
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="Your message"
-                    rows="4"
                     className="w-full px-6 py-4 rounded-3xl bg-[#d1cdc2]/10 text-[#d1cdc2] placeholder-[#d1cdc2]/50 focus:outline-none focus:ring-2 focus:ring-[#d1cdc2]/20 transition-all resize-none invalid:ring-2 invalid:ring-[#d1cdc2]/30"
+                    aria-label="Your message"
+                    aria-required="true"
                     required
                     onInvalid={(e) => {
                       e.target.setCustomValidity('');
@@ -184,7 +211,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
+    </motion.footer>
   );
 };
 

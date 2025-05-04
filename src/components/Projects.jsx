@@ -9,31 +9,6 @@ const Projects = () => {
   const projects = [
     {
       id: 0,
-      title: "Food Calorie Counter",
-      description: "A modern, responsive PWA for tracking daily food intake, calories, and macros. Built with Next.js, React, and USDA FoodData Central API.",
-      detailedDescription: `A modern, responsive Progressive Web App (PWA) for tracking daily food intake, calories, and macronutrients. Features food search (USDA API), barcode entry, nutrition charts, diary/history, dark mode, PWA install, and offline fallback. All data is stored locally for privacy.`,
-      image: "/food-calorie-counter.png",
-      technologies: ["Next.js", "React", "USDA FoodData Central API", "Open Food Facts", "Recharts", "Lucide Icons", "Radix UI", "PWA"],
-      link: "https://calorie-tracker.siftion.com",
-      features: [
-        "Add foods by search (USDA) or barcode (Open Food Facts fallback)",
-        "Daily diary & history with edit/delete/re-add",
-        "Nutrition charts for calories and macronutrients",
-        "Set daily calorie goal and toggle dark mode",
-        "PWA: install on phone or desktop, works offline",
-        "All data stored in browser (no account needed)",
-        "Customizable mock foods and theming"
-      ],
-      challenges: [
-        "Integrating multiple APIs (USDA, Open Food Facts)",
-        "Ensuring reliable offline support with mock data",
-        "Balancing privacy (local storage) with usability",
-        "Building a seamless, mobile-friendly PWA experience",
-        "Visualizing nutrition data in an accessible way"
-      ]
-    },
-    {
-      id: 1,
       title: "JWorra",
       description: "Professional website for DJ and producer J. Worra featuring music, tour dates, and latest updates",
       detailedDescription: "J. Worra is the professional alias of Jamie Sitter, a DJ and producer originally from Chicago, now based in Los Angeles. She has carved a niche in the dance music scene by blending classic house rhythms with contemporary tech elements, resulting in a distinctive and captivating sound. Her official website, jworra.com, serves as a central hub for her music releases, tour dates, and latest updates.",
@@ -57,6 +32,32 @@ const Projects = () => {
         "Ensuring cross-platform compatibility"
       ]
     },
+    {
+      id: 1,
+      title: "Food Calorie Counter",
+      description: "A modern, responsive PWA for tracking daily food intake, calories, and macros. Built with Next.js, React, and USDA FoodData Central API.",
+      detailedDescription: `A modern, responsive Progressive Web App (PWA) for tracking daily food intake, calories, and macronutrients. Features food search (USDA API), barcode entry, nutrition charts, diary/history, dark mode, PWA install, and offline fallback. All data is stored locally for privacy.`,
+      image: "/food-calorie-counter.png",
+      technologies: ["Next.js", "React", "USDA FoodData Central API", "Open Food Facts", "Recharts", "Lucide Icons", "Radix UI", "PWA"],
+      link: "https://calorie-tracker.siftion.com",
+      features: [
+        "Add foods by search (USDA) or barcode (Open Food Facts fallback)",
+        "Daily diary & history with edit/delete/re-add",
+        "Nutrition charts for calories and macronutrients",
+        "Set daily calorie goal and toggle dark mode",
+        "PWA: install on phone or desktop, works offline",
+        "All data stored in browser (no account needed)",
+        "Customizable mock foods and theming"
+      ],
+      challenges: [
+        "Integrating multiple APIs (USDA, Open Food Facts)",
+        "Ensuring reliable offline support with mock data",
+        "Balancing privacy (local storage) with usability",
+        "Building a seamless, mobile-friendly PWA experience",
+        "Visualizing nutrition data in an accessible way"
+      ]
+    },
+   
     {
       id: 2,
       title: "L'Affaire Musicale",
@@ -149,6 +150,22 @@ const Projects = () => {
       projects: [
         {
           id: 1,
+          title: "SkyPulse",
+          description: "Real-time weather application with interactive maps and detailed forecasts",
+          image: "/skypulse.jpeg",
+          technologies: ["React", "OpenWeatherMap API", "Mapbox API", "CSS", "HTML"],
+          link: "https://skypulse.siftion.com/",
+          features: [
+            "Real-time weather data visualization",
+            "Interactive map integration",
+            "Detailed forecast information",
+            "Location-based weather updates",
+            "Responsive design for all devices",
+            "Seamless API integration"
+          ]
+        },
+        {
+          id: 2,
           title: "Meow Gen",
           description: "A fun web app that generates random cat GIFs using the Cat API",
           image: "/meow-gen.png",
@@ -163,7 +180,7 @@ const Projects = () => {
           ]
         },
         {
-          id: 2,
+          id: 3,
           title: "Pup Gen",
           description: "Interactive web application that fetches random dog GIFs",
           image: "/pup-gen.png",
@@ -178,7 +195,7 @@ const Projects = () => {
           ]
         },
         {
-          id: 3,
+          id: 4,
           title: "FilmFlow",
           description: "Streamlined Movie Discovery web app for exploring and tracking films.",
           image: "/filmflow.png",

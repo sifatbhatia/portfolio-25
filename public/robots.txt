@@ -1,4 +1,27 @@
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /node_modules/
+Disallow: /dist/
+Disallow: /build/
 
-Sitemap: https://siftion.com/sitemap.xml 
+# Crawl-delay in seconds
+Crawl-delay: 10
+
+# Sitemap
+Sitemap: https://siftion.com/sitemap.xml
+
+# Google-specific directives
+Host: siftion.com
+
+# Bing-specific directives
+# Bing-site-verification: [YOUR_BING_VERIFICATION_CODE]
+
+# Yandex-specific directives
+# Host: siftion.com
+
+# XML Sitemaps for different content types
+# Sitemap: https://siftion.com/sitemap-posts.xml
+# Sitemap: https://siftion.com/sitemap-images.xml
+# Sitemap: https://siftion.com/sitemap-videos.xml

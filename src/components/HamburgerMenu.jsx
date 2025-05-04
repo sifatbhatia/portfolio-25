@@ -9,7 +9,8 @@ const HamburgerMenu = ({ menuItems = [] }) => {
       <button
         className="flex items-center justify-center w-14 h-14 rounded-full border-2 border-[#d1cdc2] bg-black/20 backdrop-blur-lg hover:bg-white/20 transition-all focus:outline-none group shadow-lg"
         style={{ boxShadow: "0 2px 24px 0 rgba(30,30,60,0.15)" }}
-        aria-label="Open menu"
+        aria-label="Toggle navigation menu"
+        aria-expanded={open}
         onClick={() => setOpen((v) => !v)}
       >
         <span className="relative flex flex-col items-center justify-center w-8 h-8">
@@ -30,6 +31,7 @@ const HamburgerMenu = ({ menuItems = [] }) => {
               href={item.href}
               className="text-lg text-[#030a1f] font-semibold px-4 py-2 rounded-lg hover:bg-[#d1cdc2]/30 hover:text-[#18181b] transition-all"
               onClick={() => setOpen(false)}
+              aria-label={`Navigate to ${item.label} section`}
             >
               {item.label}
             </a>

@@ -507,7 +507,7 @@ p {
 }
 
 .button-secondary:hover {
-  background-color: rgba(99, 102, 241, 0.1);
+  background-color: #6366f11a;
   color: #fff;
 }
 
