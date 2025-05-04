@@ -5,23 +5,34 @@ Disallow: /admin/
 Disallow: /node_modules/
 Disallow: /dist/
 Disallow: /build/
+Disallow: /test/
+Disallow: /backup/
+Disallow: /temp/
 
-# Crawl-delay in seconds
+# Crawl-delay in seconds (10 seconds)
 Crawl-delay: 10
 
 # Sitemap
 Sitemap: https://siftion.com/sitemap.xml
+Sitemap: https://siftion.com/sitemap-images.xml
 
 # Google-specific directives
 Host: siftion.com
+Allow: /projects/
+Allow: /about/
+Allow: /contact/
 
 # Bing-specific directives
-# Bing-site-verification: [YOUR_BING_VERIFICATION_CODE]
+Bing-site-verification: [YOUR_BING_VERIFICATION_CODE]
 
 # Yandex-specific directives
-# Host: siftion.com
+Host: siftion.com
+Allow: /projects/
+Allow: /about/
+Allow: /contact/
 
 # XML Sitemaps for different content types
-# Sitemap: https://siftion.com/sitemap-posts.xml
-# Sitemap: https://siftion.com/sitemap-images.xml
+Sitemap: https://siftion.com/sitemap-posts.xml
+Sitemap: https://siftion.com/sitemap-images.xml
+Sitemap: https://siftion.com/sitemap-videos.xml
 # Sitemap: https://siftion.com/sitemap-videos.xml
