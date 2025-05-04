@@ -1,0 +1,50 @@
+{
+  "name": "Sifat Bhatia - Full Stack Developer",
+  "short_name": "Sifat Bhatia",
+  "description": "Full Stack Developer specializing in modern web applications, creative design solutions, and seamless user experiences.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#030a1f",
+  "theme_color": "#030a1f",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/webp/icon-192x192.webp",
+      "sizes": "192x192",
+      "type": "image/webp"
+    },
+    {
+      "src": "/webp/icon-512x512.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
+    },
+    {
+      "src": "/webp/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/webp/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/webp/screenshot-1280x800.webp",
+      "sizes": "1280x800",
+      "type": "image/webp",
+      "platform": "windows"
+    },
+    {
+      "src": "/webp/screenshot-1280x800.png",
+      "sizes": "1280x800",
+      "type": "image/png",
+      "platform": "windows"
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

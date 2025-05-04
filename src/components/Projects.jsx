@@ -12,7 +12,7 @@ const Projects = () => {
       title: "JWorra",
       description: "Professional website for DJ and producer J. Worra featuring music, tour dates, and latest updates",
       detailedDescription: "J. Worra is the professional alias of Jamie Sitter, a DJ and producer originally from Chicago, now based in Los Angeles. She has carved a niche in the dance music scene by blending classic house rhythms with contemporary tech elements, resulting in a distinctive and captivating sound. Her official website, jworra.com, serves as a central hub for her music releases, tour dates, and latest updates.",
-      image: "/jworra.png",
+      image: "webp/jworra.webp",
       technologies: ["PHP", "JavaScript", "FontAwesome", "CSS", "HTML"],
       link: "https://www.jworra.com/",
       features: [
@@ -37,7 +37,7 @@ const Projects = () => {
       title: "Food Calorie Counter",
       description: "A modern, responsive PWA for tracking daily food intake, calories, and macros. Built with Next.js, React, and USDA FoodData Central API.",
       detailedDescription: `A modern, responsive Progressive Web App (PWA) for tracking daily food intake, calories, and macronutrients. Features food search (USDA API), barcode entry, nutrition charts, diary/history, dark mode, PWA install, and offline fallback. All data is stored locally for privacy.`,
-      image: "/food-calorie-counter.png",
+      image: "webp/food-calorie-counter.webp",
       technologies: ["Next.js", "React", "USDA FoodData Central API", "Open Food Facts", "Recharts", "Lucide Icons", "Radix UI", "PWA"],
       link: "https://calorie-tracker.siftion.com",
       features: [
@@ -63,7 +63,7 @@ const Projects = () => {
       title: "L'Affaire Musicale",
       description: "Artist management firm with 20+ years of industry experience",
       detailedDescription: "L'Affaire Musicale is a distinguished artist management firm with over two decades of experience in the music industry. Specializing in artist development and career management, the firm has built a reputation for nurturing talent and creating successful careers through strategic partnerships, thoughtful mentorship, and customized content strategies. Their clients have achieved significant milestones including releases on major labels, features in top publications, and performances at major festivals worldwide.",
-      image: "/laffaire.png",
+      image: "webp/laffaire.webp",
       technologies: ["Squarespace", "Custom CSS", "JavaScript", "HTML", "Responsive Design"],
       link: "https://www.laffairemusicale.com/",
       features: [
@@ -88,7 +88,7 @@ const Projects = () => {
       title: "StarConsciousness",
       description: "Transformative platform for spiritual awakening and consciousness development",
       detailedDescription: "StarConsciousness.com is a comprehensive platform dedicated to spiritual awakening and consciousness development. The site features a unique blend of content including the Lighttoformiam Mindset, Cosmic Crest, and the New R.A.C.E. Paradigm (Respect, Appreciation, Compassionate, Empowerment). It serves as a hub for spiritual education, offering resources like eBooks, videos, and interactive content to help users unlock their STARPower and achieve self-mastery.",
-      image: "/star-con.png",
+      image: "webp/star-con.webp",
       technologies: ["WordPress", "Custom Theme", "PHP", "JavaScript", "CSS", "HTML"],
       link: "http://starconsciousness.com/",
       features: [
@@ -113,7 +113,7 @@ const Projects = () => {
       title: "Wicked Paradise",
       description: "A premier day club and intimate boat party series website",
       detailedDescription: "Wicked Paradise is a premier day club and intimate boat party series that has become beloved by crowds in LA, Miami, New York, and Chicago. The website showcases their exclusive events including Cafe Mambo residencies, Wicked Delight parties, Dreamboat experiences, and special artist series featuring top DJs like Justin Jay, Will Clarke, Moon Boots, and more. The platform serves as a hub for event information, ticket sales, and maintaining the brand's exclusive, high-energy atmosphere.",
-      image: "/wickedparadise.png",
+      image: "webp/wickedparadise.webp",
       technologies: ["React", "JavaScript", "CSS", "HTML", "Responsive Design", "Animation"],
       link: "https://www.wckdparadise.com/",
       features: [
@@ -152,7 +152,7 @@ const Projects = () => {
           id: 1,
           title: "SkyPulse",
           description: "Real-time weather application with interactive maps and detailed forecasts",
-          image: "/skypulse.jpeg",
+          image: "webp/skypulse.webp",
           technologies: ["React", "OpenWeatherMap API", "Mapbox API", "CSS", "HTML"],
           link: "https://skypulse.siftion.com/",
           features: [
@@ -168,7 +168,7 @@ const Projects = () => {
           id: 2,
           title: "Meow Gen",
           description: "A fun web app that generates random cat GIFs using the Cat API",
-          image: "/meow-gen.png",
+          image: "webp/meow-gen.webp",
           technologies: ["React", "API Integration", "CSS", "HTML"],
           link: "https://meowgen.siftion.com/",
           features: [
@@ -183,7 +183,7 @@ const Projects = () => {
           id: 3,
           title: "Pup Gen",
           description: "Interactive web application that fetches random dog GIFs",
-          image: "/pup-gen.png",
+          image: "webp/pup-gen.webp",
           technologies: ["React", "API Integration", "CSS", "HTML"],
           link: "https://pupgen.siftion.com/",
           features: [
@@ -198,7 +198,7 @@ const Projects = () => {
           id: 4,
           title: "FilmFlow",
           description: "Streamlined Movie Discovery web app for exploring and tracking films.",
-          image: "/filmflow.png",
+          image: "webp/filmflow.webp",
           technologies: ["React", "Redux", "Node.js", "Express", "Sequelize", "Bcrypt", "API Integration", "CSS", "HTML"],
           link: "https://filmflow.siftion.com/",
           features: [
@@ -226,7 +226,7 @@ const Projects = () => {
           id: 1,
           title: "PixSqueeze",
           description: "Image compression tool that makes your images lighter while maintaining quality",
-          image: "/pixsqueeze.png",
+          image: "webp/pixsqueeze.webp",
           technologies: ["React", "JavaScript", "CSS", "HTML", "Image Processing"],
           link: "https://pixsqueeze.siftion.com/",
           features: [
@@ -469,7 +469,7 @@ const Projects = () => {
               title: "CineSky",
               description: "Modern weather application with real-time forecasts",
               detailedDescription: "CineSky is a modern weather application built with Next.js that provides real-time weather information and forecasts. The app features a clean, responsive UI and integrates with OpenWeatherMap API for accurate weather data. Users can search for weather in any city worldwide, save favorite locations, and view their current location on a map.",
-              image: "/cine-sky.png",
+              image: "webp/cine-sky.webp",
               technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Firebase", "OpenWeatherMap API", "React Icons"],
               link: "https://cinesky.siftion.com",
               features: [
@@ -494,7 +494,7 @@ const Projects = () => {
             <div className="relative overflow-hidden rounded-xl shadow-lg bg-[#030a1f]">
               <div className="aspect-w-16 aspect-h-9">
                 <img
-                  src="/cine-sky.png"
+                  src="webp/cine-sky.webp"
                   alt="CineSky"
                   className="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-500"
                 />
