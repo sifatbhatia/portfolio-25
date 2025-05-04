@@ -1,5 +1,4 @@
 User-agent: *
-Allow: /
 Disallow: /api/
 Disallow: /admin/
 Disallow: /node_modules/
@@ -9,30 +8,11 @@ Disallow: /test/
 Disallow: /backup/
 Disallow: /temp/
 
-# Crawl-delay in seconds (10 seconds)
-Crawl-delay: 10
-
-# Sitemap
+# Primary sitemap (contains image entries)
 Sitemap: https://siftion.com/sitemap.xml
-Sitemap: https://siftion.com/sitemap-images.xml
 
-# Google-specific directives
-Host: siftion.com
-Allow: /projects/
-Allow: /about/
-Allow: /contact/
-
-# Bing-specific directives
-Bing-site-verification: [YOUR_BING_VERIFICATION_CODE]
-
-# Yandex-specific directives
-Host: siftion.com
-Allow: /projects/
-Allow: /about/
-Allow: /contact/
-
-# XML Sitemaps for different content types
-Sitemap: https://siftion.com/sitemap-posts.xml
-Sitemap: https://siftion.com/sitemap-images.xml
-Sitemap: https://siftion.com/sitemap-videos.xml
+# Optional: extra sitemaps if you truly split them
 # Sitemap: https://siftion.com/sitemap-videos.xml
+
+# Host directive (Yandex only) – keep a single one
+Host: siftion.com

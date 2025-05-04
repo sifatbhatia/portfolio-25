@@ -5,6 +5,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Footer from './components/Footer';
 import HamburgerMenu from './components/HamburgerMenu';
+import SifatPersonSchema from './components/SEO/SifatPersonSchema';
 
 function App() {
   // Pixy Mode state
@@ -25,6 +26,7 @@ function App() {
 
   return (
     <>
+      <SifatPersonSchema />
       <div className="fixed top-6 left-0 w-full flex items-center justify-between px-10 z-50 pointer-events-none">
         <div className="pointer-events-auto">
           <HamburgerMenu menuItems={[
