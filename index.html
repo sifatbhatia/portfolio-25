@@ -38,13 +38,24 @@
   <link rel="apple-touch-icon" sizes="180x180" href="https://siftion.com/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="https://siftion.com/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="https://siftion.com/favicon-16x16.png" />
-  <link rel="manifest" href="https://siftion.com/site.webmanifest" />
+  <link rel="manifest" href="/site.webmanifest" />
   <meta name="theme-color" content="#030a1f" />
 
-  <!-- Preload logo -->
-  <link rel="preload" href="https://siftion.com/logo.svg" as="image" />
+  <!-- Preload critical assets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link 
+    rel="preload" 
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" 
+    as="style" 
+    onload="this.onload=null;this.rel='stylesheet'"
+  />
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  </noscript>
+  <link rel="preload" href="/logo.svg" as="image" type="image/svg+xml" />
 
-  <!-- Google Analytics -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WJFRNZ86BX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
