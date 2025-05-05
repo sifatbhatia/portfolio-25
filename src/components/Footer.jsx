@@ -72,7 +72,7 @@ const Footer = () => {
         backgroundColor: isInView ? '#0c1a3d' : '#030a1f',
         transition: { duration: 0.8, ease: 'easeInOut' }
       }}
-      className="text-[#d1cdc2] py-20 px-4 md:px-8"
+      className="text-[#bebde2] py-20 px-4 md:px-8"
     >
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
@@ -88,7 +88,7 @@ const Footer = () => {
                     placeholder="Your name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-6 py-4 rounded-full bg-[#d1cdc2]/10 text-[#d1cdc2] placeholder-[#d1cdc2]/50 focus:outline-none focus:ring-2 focus:ring-[#d1cdc2]/20 transition-all invalid:ring-2 invalid:ring-[#d1cdc2]/30"
+                    className="w-full px-6 py-4 rounded-full bg-[#bebde2]/10 text-[#bebde2] placeholder-[#bebde2]/50 focus:outline-none focus:ring-2 focus:ring-[#bebde2]/20 transition-all invalid:ring-2 invalid:ring-[#bebde2]/30"
                     aria-label="Your name"
                     aria-required="true"
                     required
@@ -100,7 +100,7 @@ const Footer = () => {
                     }}
                     onInput={(e) => e.target.setCustomValidity('')}
                   />
-                  <div className="absolute -bottom-6 left-6 text-sm text-[#d1cdc2]/70 opacity-0 transition-opacity peer-invalid:opacity-100"></div>
+                  <div className="absolute -bottom-6 left-6 text-sm text-[#bebde2]/70 opacity-0 transition-opacity peer-invalid:opacity-100"></div>
                 </div>
                 <div className="space-y-2 relative">
                   <input
@@ -109,7 +109,7 @@ const Footer = () => {
                     placeholder="Your email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-6 py-4 rounded-full bg-[#d1cdc2]/10 text-[#d1cdc2] placeholder-[#d1cdc2]/50 focus:outline-none focus:ring-2 focus:ring-[#d1cdc2]/20 transition-all invalid:ring-2 invalid:ring-[#d1cdc2]/30"
+                    className="w-full px-6 py-4 rounded-full bg-[#bebde2]/10 text-[#bebde2] placeholder-[#bebde2]/50 focus:outline-none focus:ring-2 focus:ring-[#bebde2]/20 transition-all invalid:ring-2 invalid:ring-[#bebde2]/30"
                     aria-label="Your email address"
                     aria-required="true"
                     required
@@ -123,7 +123,7 @@ const Footer = () => {
                     }}
                     onInput={(e) => e.target.setCustomValidity('')}
                   />
-                  <div className="absolute -bottom-6 left-6 text-sm text-[#d1cdc2]/70 opacity-0 transition-opacity peer-invalid:opacity-100"></div>
+                  <div className="absolute -bottom-6 left-6 text-sm text-[#bebde2]/70 opacity-0 transition-opacity peer-invalid:opacity-100"></div>
                 </div>
                 <div className="space-y-2 relative">
                   <textarea
@@ -131,7 +131,7 @@ const Footer = () => {
                     placeholder="Your message"
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full px-6 py-4 rounded-3xl bg-[#d1cdc2]/10 text-[#d1cdc2] placeholder-[#d1cdc2]/50 focus:outline-none focus:ring-2 focus:ring-[#d1cdc2]/20 transition-all resize-none invalid:ring-2 invalid:ring-[#d1cdc2]/30"
+                    className="w-full px-6 py-4 rounded-3xl bg-[#bebde2]/10 text-[#bebde2] placeholder-[#bebde2]/50 focus:outline-none focus:ring-2 focus:ring-[#bebde2]/20 transition-all resize-none invalid:ring-2 invalid:ring-[#bebde2]/30"
                     aria-label="Your message"
                     aria-required="true"
                     required
@@ -143,7 +143,7 @@ const Footer = () => {
                     }}
                     onInput={(e) => e.target.setCustomValidity('')}
                   />
-                  <div className="absolute -bottom-6 left-6 text-sm text-[#d1cdc2]/70 opacity-0 transition-opacity peer-invalid:opacity-100"></div>
+                  <div className="absolute -bottom-6 left-6 text-sm text-[#bebde2]/70 opacity-0 transition-opacity peer-invalid:opacity-100"></div>
                 </div>
               </div>
               
@@ -151,7 +151,7 @@ const Footer = () => {
                 <button
                   type="submit"
                   disabled={status.type === 'loading'}
-                  className="px-8 py-4 rounded-full bg-[#d1cdc2]/10 text-[#d1cdc2] hover:bg-[#d1cdc2]/20 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
+                  className="px-8 py-4 rounded-full bg-[#bebde2]/10 text-[#bebde2] hover:bg-[#bebde2]/20 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
                 >
                   {status.type === 'loading' ? (
                     <>
@@ -166,7 +166,7 @@ const Footer = () => {
                     className={`flex-1 text-sm px-6 py-4 rounded-full transition-all ${
                       status.type === 'success' ? 'bg-green-500/10 text-green-400' : 
                       status.type === 'error' ? 'bg-red-500/10 text-red-400' : 
-                      'bg-[#d1cdc2]/10'
+                      'bg-[#bebde2]/10'
                     }`}
                   >
                     {status.message}
@@ -182,18 +182,18 @@ const Footer = () => {
               <div className="space-y-4">
                 <h3 className="text-lg font-semibold">Navigation</h3>
                 <div className="space-y-3">
-                  <a href="#home" className="block hover:text-[#d1cdc2]/70 transition-colors">Home</a>
-                  <a href="#about" className="block hover:text-[#d1cdc2]/70 transition-colors">About</a>
-                  <a href="#projects" className="block hover:text-[#d1cdc2]/70 transition-colors">Projects</a>
-                  <a href="#contact" className="block hover:text-[#d1cdc2]/70 transition-colors">Contact</a>
+                  <a href="#home" className="block hover:text-[#bebde2]/70 transition-colors">Home</a>
+                  <a href="#about" className="block hover:text-[#bebde2]/70 transition-colors">About</a>
+                  <a href="#projects" className="block hover:text-[#bebde2]/70 transition-colors">Projects</a>
+                  <a href="#contact" className="block hover:text-[#bebde2]/70 transition-colors">Contact</a>
                 </div>
               </div>
               <div className="space-y-4">
                 <h3 className="text-lg font-semibold">Social</h3>
                 <div className="space-y-3">
-                  <a href="mailto:bsifat@gmail.com" target="_blank" rel="noopener noreferrer" className="block hover:text-[#d1cdc2]/70 transition-colors">[ EMAIL ]</a>
-                  <a href="https://www.instagram.com/siftion" target="_blank" rel="noopener noreferrer" className="block hover:text-[#d1cdc2]/70 transition-colors">[ INSTAGRAM ]</a>
-                  <a href="https://www.linkedin.com/in/siftion" target="_blank" rel="noopener noreferrer" className="block hover:text-[#d1cdc2]/70 transition-colors">[ LINKEDIN ]</a>
+                  <a href="mailto:bsifat@gmail.com" target="_blank" rel="noopener noreferrer" className="block hover:text-[#bebde2]/70 transition-colors">[ EMAIL ]</a>
+                  <a href="https://www.instagram.com/siftion" target="_blank" rel="noopener noreferrer" className="block hover:text-[#bebde2]/70 transition-colors">[ INSTAGRAM ]</a>
+                  <a href="https://www.linkedin.com/in/siftion" target="_blank" rel="noopener noreferrer" className="block hover:text-[#bebde2]/70 transition-colors">[ LINKEDIN ]</a>
                   {/* <a href="#" target="_blank" rel="noopener noreferrer" className="block hover:text-[#d1cdc2]/70 transition-colors">[ BEHANCE ]</a> */}
                 </div>
               </div>
@@ -204,7 +204,7 @@ const Footer = () => {
         {/* Bottom section with logo */}
         <div className="mt-40 flex flex-col md:flex-row justify-between items-center">
           <img src="/logo.svg" alt="Emotion Logo" className="footer-logo h-24 w-auto mb-8 md:mb-0" />
-          <div className="flex flex-wrap gap-4 items-center text-sm text-[#d1cdc2]/70">
+          <div className="flex flex-wrap gap-4 items-center text-sm text-[#bebde2]/70">
             <span>©2025. All rights reserved</span>
             {/* <a href="#" className="hover:text-[#d1cdc2] transition-colors">Terms of Service</a>
             <a href="#" className="hover:text-[#d1cdc2] transition-colors">Privacy Policy</a> */}

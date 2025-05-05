@@ -327,7 +327,7 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className="bg-[#d1cdc2] text-[#030a1f] py-20 px-4 md:px-8">
+    <section id="projects" className="bg-[#bebde2] text-[#03012f] py-20 px-4 md:px-8">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
           Featured Projects

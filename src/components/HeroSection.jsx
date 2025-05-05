@@ -38,14 +38,14 @@ const HeroSection = () => {
          path.style.strokeDasharray = length;
          path.style.strokeDashoffset = length;
          path.style.fill = "transparent";
-         path.style.stroke = "#d1cdc2";
+         path.style.stroke = "#bebde2";
 
          const delay = index * 80;
          setTimeout(() => {
             requestAnimationFrame(() => {
                path.style.transition = "stroke-dashoffset 1.2s cubic-bezier(0.4, 0, 0.2, 1), fill 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.8s";
                path.style.strokeDashoffset = 0;
-               path.style.fill = "#d1cdc2";
+               path.style.fill = "#bebde2";
             });
          }, delay + 300);
       });
@@ -66,7 +66,7 @@ const HeroSection = () => {
    }, []);
 
    return (
-      <section id="home" className="bg-[#030a1f] text-white min-h-[calc(100vh-80px)] flex flex-col justify-end relative">
+      <section id="home" className="bg-[#03012f] text-white min-h-[calc(100vh-80px)] flex flex-col justify-end relative">
          <div className="w-full px-4 md:px-8 lg:px-16 mb-8">
             <div className="relative" role="img" aria-label="Sifat Bhatia - Full Stack Developer & Designer">
                {/* Original logo with drawing animation that fades out left-to-right */}
@@ -81,7 +81,7 @@ const HeroSection = () => {
                >
                   <Logo
                      className="w-full h-auto"
-                     style={{ strokeWidth: "1.5" }}
+                     style={{ strokeWidth: "1.5", fill: "#bebde2", stroke: "#bebde2" }}
                      aria-hidden="true"
                   />
                </div>
@@ -104,14 +104,14 @@ const HeroSection = () => {
                      <div className="w-full h-auto pt-4 pb-8"> {/* Added padding to ensure visibility */}
                         <LogoAlt2Line
                            className="w-full h-auto"
-                           style={{ strokeWidth: "1.5" }}
+                           style={{ strokeWidth: "1.5", fill: "#bebde2", stroke: "#bebde2" }}
                            aria-hidden="true"
                         />
                      </div>
                   ) : (
                      <LogoAlt
                         className="w-full h-auto"
-                        style={{ strokeWidth: "1.5" }}
+                        style={{ strokeWidth: "1.5", fill: "#bebde2", stroke: "#bebde2" }}
                         aria-hidden="true"
                      />
                   )}
